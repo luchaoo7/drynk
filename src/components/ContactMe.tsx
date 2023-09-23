@@ -3,11 +3,7 @@ import Header from './Header';
 import SearchEngineOptimize from './utils/SearchEngineOptimize';
 import contactBG from '/src/assets/img/contact-bg.jpg';
 
-interface ContactMeProps {
-    // Add any props you might need
-}
-
-const ContactMe = ({ }: ContactMeProps): JSX.Element => {
+const ContactMe = (): JSX.Element => {
 
     return (
         <>

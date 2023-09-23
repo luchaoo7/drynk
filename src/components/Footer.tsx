@@ -1,11 +1,7 @@
 
 import React from 'react'
 
-interface FooterProps {
-    // Add any props you might need
-}
-
-const Footer = ({ }: FooterProps): JSX.Element => {
+const Footer = (): JSX.Element => {
 
     return (
         <footer className="border-top">

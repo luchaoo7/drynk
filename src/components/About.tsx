@@ -3,11 +3,7 @@ import React from 'react'
 import SearchEngineOptimize from './utils/SearchEngineOptimize';
 // import aboutBG from '/src/assets/img/about-bg.jpg';
 
-interface AboutProps {
-    // Add any props you might need
-}
-
-const About = ({ }: AboutProps): JSX.Element => {
+const About = (): JSX.Element => {
 
     return (
         <>

@@ -4,10 +4,6 @@ import { Link } from 'react-router-dom';
 import { drynkBG, drynkBG2, drynkBG3 } from './utils/ImageImporter';
 import PostImage from './utils/PostImage';
 
-interface NavBarProps {
-    // Add any props you might need
-}
-
 const style: CSSProperties = {
     fontSize: "15px",
 }
@@ -18,7 +14,7 @@ const saberMasStyle: CSSProperties = {
     fontFamily: "inherit",
 }
 
-const NavBar2 = ({ }: NavBarProps): JSX.Element => {
+const NavBar2 = (): JSX.Element => {
 
     return (
         <>

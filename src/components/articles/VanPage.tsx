@@ -4,31 +4,27 @@ import SectionHeading from '../utils/SectionHeading';
 import Header from '../Header';
 // import SmallHeading from '../utils/SmallHeading';
 // import SmallerHeading from '../utils/SmallerHeading';
-import PostImage from '../utils/PostImage';
-import Divider from '../utils/Divider';
+// import PostImage from '../utils/PostImage';
+// import Divider from '../utils/Divider';
 // import Divider from '../utils/Divider';
 import '../../Van.css'
 
-interface VanPageProps {
-    // Add any props you might need
-}
+const VanPage = (): JSX.Element => {
 
-const VanPage = ({ }: VanPageProps): JSX.Element => {
+    // let boldStyle: CSSProperties | undefined = {
+        // fontSize: "30px",
+        // color: "#839bf9"
+    // }
 
-    let boldStyle: CSSProperties | undefined = {
-        fontSize: "30px",
-        color: "#839bf9"
-    }
-
-    let headingStyle: CSSProperties | undefined = {
+    const headingStyle: CSSProperties | undefined = {
         color: "#c40046"
     }
-    let postImageStyle: CSSProperties | undefined = {
-        height: "10vw",
-        width: "10vw",
-        position: "fixed",
-
-    }
+    // let postImageStyle: CSSProperties | undefined = {
+        // height: "10vw",
+        // width: "10vw",
+        // position: "fixed",
+ 
+    // }
 
 
 

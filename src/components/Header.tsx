@@ -3,9 +3,9 @@ import React, { CSSProperties } from 'react'
 
 interface HeaderProps {
     // Add any props you might need
-    heading: String;
-    backgroundImage: String;
-    subHeading?: String;
+    heading: string;
+    backgroundImage: string;
+    subHeading?: string;
 }
 
 
