@@ -1,0 +1,13 @@
+/*
+css for p tag in vanPage component
+*/
+.ptagcolour p {
+  color: #767676;
+}
+
+/*
+css for navigation component
+*/
+.navlinks li {
+  color: #c40046;
+}
