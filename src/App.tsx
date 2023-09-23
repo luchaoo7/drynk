@@ -6,7 +6,7 @@ import { BrowserRouter as Router,
 } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import ContactMe from './components/ContactMe';
-import VanPage from './components/articles/VanPage';
+// import VanPage from './components/articles/VanPage';
 import NavBar2 from './components/NavBar2';
 
 function App() {
