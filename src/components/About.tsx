@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react'
 // import Header from './Header';
-import { cupBG, cupTablesBG, multipleCapsulBG, singleCapsulBG } from './utils/ImageImporter';
+import { circleBG, cupBG, cupTablesBG, multipleCapsulBG, singleCapsulBG } from './utils/ImageImporter';
 import PostImage from './utils/PostImage';
 import SearchEngineOptimize from './utils/SearchEngineOptimize';
 // import aboutBG from '/src/assets/img/about-bg.jpg';
@@ -39,7 +39,7 @@ const About = (): JSX.Element => {
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <PostImage image_path={cupBG} className="d-block w-100" />
+                            <PostImage image_path={circleBG} className="d-block w-100" />
                             <div className="carousel-caption d-none d-md-block">
                                 <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
                             </div>
@@ -58,16 +58,18 @@ const About = (): JSX.Element => {
                     </div>
                 </div>
 
+
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <PostImage image_path={cupTablesBG} className="d-block w-100" />
+                            <PostImage image_path={cupBG} className="d-block w-100" />
                             <div className="carousel-caption d-none d-md-block">
                                 <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
@@ -81,6 +83,16 @@ const About = (): JSX.Element => {
                 </div>
 
 
+                <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <PostImage image_path={cupTablesBG} className="d-block w-100" />
+                            <div className="carousel-caption d-none d-md-block">
+                                <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 {/* <div className="container px-4 px-lg-5"> */}
                 {/* <div className="row gx-4 gx-lg-5 justify-content-center"> */}
                 {/* <div className="col-md-10 col-lg-8 col-xl-7"> */}

@@ -1,7 +1,7 @@
 
 import React, { CSSProperties } from 'react'
 import { Link } from 'react-router-dom';
-import { drynkBG, drynkBG2, singleCapsulBG } from './utils/ImageImporter';
+import { circleBG, multipleCapsulBG, singleCapsulBG } from './utils/ImageImporter';
 import PostImage from './utils/PostImage';
 
 const style: CSSProperties = {
@@ -27,13 +27,13 @@ const NavBar2 = (): JSX.Element => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <PostImage image_path={drynkBG2} className="d-block w-100"/>
+                        <PostImage image_path={circleBG} className="d-block w-100"/>
                         <div className="carousel-caption d-none d-md-block">
                         <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <PostImage image_path={drynkBG} className="d-block w-100"/>
+                        <PostImage image_path={multipleCapsulBG} className="d-block w-100"/>
                         <div className="carousel-caption d-none d-md-block">
                         <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
                         </div>
