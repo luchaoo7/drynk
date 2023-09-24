@@ -16,6 +16,7 @@ const saberMasStyle: CSSProperties = {
 
 const backgroundStyle: CSSProperties = {
     // backgroundImage: `url('${drynkBG4}')`
+    marginTop: "20px"
 }
 
 const About = (): JSX.Element => {
@@ -36,7 +37,7 @@ const About = (): JSX.Element => {
 
             <main className="mb-4 text-center" style={backgroundStyle} >
 
-                <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+                <div style={backgroundStyle} id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <PostImage image_path={circleBG} className="d-block w-100" />
@@ -47,7 +48,10 @@ const About = (): JSX.Element => {
                     </div>
                 </div>
 
-                <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+                <div><h1></h1></div>
+
+
+                <div style={backgroundStyle} id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <PostImage image_path={multipleCapsulBG} className="d-block w-100" />
@@ -59,7 +63,7 @@ const About = (): JSX.Element => {
                 </div>
 
 
-                <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+                <div style={backgroundStyle} id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <PostImage image_path={cupBG} className="d-block w-100" />
@@ -71,7 +75,7 @@ const About = (): JSX.Element => {
                 </div>
 
 
-                <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+                <div style={backgroundStyle} id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <PostImage image_path={singleCapsulBG} className="d-block w-100" />
@@ -83,7 +87,7 @@ const About = (): JSX.Element => {
                 </div>
 
 
-                <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+                <div style={backgroundStyle} id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <PostImage image_path={cupTablesBG} className="d-block w-100" />
