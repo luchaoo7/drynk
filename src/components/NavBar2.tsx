@@ -1,5 +1,5 @@
 
-import React, { CSSProperties } from 'react'
+import React, { CSSProperties, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { circleBG, multipleCapsulBG, singleCapsulBG } from './utils/ImageImporter';
 import PostImage from './utils/PostImage';
@@ -16,6 +16,11 @@ const saberMasStyle: CSSProperties = {
 }
 
 const NavBar2 = (): JSX.Element => {
+    const [showCollapse, setShowCollapse] = useState<boolean>(false);
+
+    const showCollapseNav = () => {
+        setShowCollapse((prev) => !prev);
+    }
 
     return (
         <>
@@ -55,18 +60,16 @@ const NavBar2 = (): JSX.Element => {
                 </button>
             </div>
 
-
-
             <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
                 <div className="container px-4 px-lg-5">
                     <Link style={style} className="navbar-brand" to="/">DRYNK</Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false">
+                    <button onClick={showCollapseNav} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded={`${showCollapse ? "true" : "false"}`}>
                         Menu
                         <i className="fas fa-bars"></i>
                     </button>
 
 
-                    <div className="collapse navbar-collapse" id="navbarResponsive">
+                    <div className={`collapse navbar-collapse ${ showCollapse ? "show" : ""}`} id="navbarResponsive">
                         <ul className="navbar-nav ms-auto py-4 py-lg-0">
                             <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/">PRODUCTO</Link> </li>
                             <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/">COMPRAR</Link> </li>
