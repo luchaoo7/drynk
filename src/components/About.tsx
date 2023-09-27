@@ -41,7 +41,7 @@ const About = (): JSX.Element => {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <PostImage image_path={multipleCapsulBG} className="d-block w-100" />
-                            <div className="carousel-caption d-none d-md-block">
+                            <div className="carousel-caption d-md-block">
                                 <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
                             </div>
                         </div>
@@ -52,7 +52,7 @@ const About = (): JSX.Element => {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <PostImage image_path={circleBG} className="d-block w-100" />
-                            <div className="carousel-caption d-none d-md-block">
+                            <div className="carousel-caption d-md-block">
                                 <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ const About = (): JSX.Element => {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <PostImage image_path={cupBG} className="d-block w-100" />
-                            <div className="carousel-caption d-none d-md-block">
+                            <div className="carousel-caption d-md-block">
                                 <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ const About = (): JSX.Element => {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <PostImage image_path={singleCapsulBG} className="d-block w-100" />
-                            <div className="carousel-caption d-none d-md-block">
+                            <div className="carousel-caption d-md-block">
                                 <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
                             </div>
                         </div>
@@ -88,7 +88,7 @@ const About = (): JSX.Element => {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <PostImage image_path={cupTablesBG} className="d-block w-100" />
-                            <div className="carousel-caption d-none d-md-block">
+                            <div className="carousel-caption d-md-block">
                                 <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
                             </div>
                         </div>
