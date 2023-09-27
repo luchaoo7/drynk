@@ -16,7 +16,7 @@ const saberMasStyle: CSSProperties = {
 
 const backgroundStyle: CSSProperties = {
     // backgroundImage: `url('${drynkBG4}')`
-    marginTop: "20px"
+    // marginTop: "20px"
 }
 
 const About = (): JSX.Element => {
@@ -40,7 +40,7 @@ const About = (): JSX.Element => {
                 <div style={backgroundStyle} id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <PostImage image_path={circleBG} className="d-block w-100" />
+                            <PostImage image_path={multipleCapsulBG} className="d-block w-100" />
                             <div className="carousel-caption d-none d-md-block">
                                 <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
                             </div>
@@ -48,13 +48,10 @@ const About = (): JSX.Element => {
                     </div>
                 </div>
 
-                <div><h1></h1></div>
-
-
                 <div style={backgroundStyle} id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <PostImage image_path={multipleCapsulBG} className="d-block w-100" />
+                            <PostImage image_path={circleBG} className="d-block w-100" />
                             <div className="carousel-caption d-none d-md-block">
                                 <button style={saberMasStyle} type="button" className="btn btn-secondary btn-lg">SABER MAS</button>
                             </div>
