@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header';
+import { aCapsulBG } from './utils/ImageImporter';
 import SearchEngineOptimize from './utils/SearchEngineOptimize';
-import contactBG from '/src/assets/img/contact-bg.jpg';
 
 const ContactMe = (): JSX.Element => {
 
@@ -9,7 +9,7 @@ const ContactMe = (): JSX.Element => {
         <>
             <Header 
                 heading="Contact Me"
-                backgroundImage={contactBG}
+                backgroundImage={aCapsulBG}
                 subHeading="Have questions? I have answers."
             />
             <SearchEngineOptimize
@@ -26,13 +26,6 @@ const ContactMe = (): JSX.Element => {
                         <div className="col-md-10 col-lg-8 col-xl-7">
                             <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
                             <div className="my-5">
-                                {/* <!-- * * * * * * * * * * * * * * *--> */}
-                                {/* <!-- * * SB Forms Contact Form * *--> */}
-                                {/* <!-- * * * * * * * * * * * * * * *--> */}
-                                {/* <!-- This form is pre-integrated with SB Forms.--> */}
-                                {/* <!-- To make this form functional, sign up at--> */}
-                                {/* <!-- https://startbootstrap.com/solution/contact-forms--> */}
-                                {/* <!-- to get an API token!--> */}
                                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                                     <div className="form-floating">
                                         <input className="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />

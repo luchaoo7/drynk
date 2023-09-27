@@ -74,7 +74,7 @@ const NavBar2 = (): JSX.Element => {
                             <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/">PRODUCTO</Link> </li>
                             <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/">COMPRAR</Link> </li>
                             <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/">GALLERIA</Link> </li>
-                            <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/">NOSOTROS</Link> </li>
+                            <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/contact">NOSOTROS</Link> </li>
                             <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/">INICIAR SECION</Link> </li>
                         </ul>
                     </div>
