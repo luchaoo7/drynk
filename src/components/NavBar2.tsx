@@ -1,6 +1,6 @@
 
 import React, { CSSProperties, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // import { circleBG, multipleCapsulBG, singleCapsulBG } from './utils/ImageImporter';
 // import PostImage from './utils/PostImage';
 
@@ -17,9 +17,13 @@ const style: CSSProperties = {
 
 const NavBar2 = (): JSX.Element => {
     const [showCollapse, setShowCollapse] = useState<boolean>(false);
+    const nagivate = useNavigate();
 
     const showCollapseNav = () => {
         setShowCollapse((prev) => !prev);
+    }
+    const navigate = (page: string) => {
+        nagivate(`/${page}`)
     }
 
     return (
@@ -71,11 +75,11 @@ const NavBar2 = (): JSX.Element => {
 
                     <div className={`collapse navbar-collapse ${ showCollapse ? "show" : ""}`} id="navbarResponsive">
                         <ul className="navbar-nav ms-auto py-4 py-lg-0">
-                            <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/">PRODUCTO</Link> </li>
-                            <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/">COMPRAR</Link> </li>
-                            <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/">GALLERIA</Link> </li>
-                            <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/contact">NOSOTROS</Link> </li>
-                            <li className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/">INICIAR SECION</Link> </li>
+                            <li onClick={() => {nagivate("/")}} className="nav-item"><Link style={style} data-bs-toggle="collapse" data-bs-target="#navbarResponsive" className="nav-link px-lg-3 py-3 py-lg-4" to="/">PRODUCTO</Link> </li>
+                            <li onClick={() => {nagivate("")}} className="nav-item"><Link style={style} data-bs-toggle="collapse" data-bs-target="#navbarResponsive" className="nav-link px-lg-3 py-3 py-lg-4" to="/">COMPRAR</Link> </li>
+                            <li onClick={() => {nagivate("/")}} className="nav-item"><Link style={style} data-bs-toggle="collapse" data-bs-target="#navbarResponsive" className="nav-link px-lg-3 py-3 py-lg-4" to="/">GALLERIA</Link> </li>
+                            <li onClick={() => {navigate("contact")}} data-bs-toggle="collapse" data-bs-target="#navbarResponsive" className="nav-item"><Link style={style} className="nav-link px-lg-3 py-3 py-lg-4" to="/contact">NOSOTROS</Link> </li>
+                            <li className="nav-item"><Link style={style} data-bs-toggle="collapse" data-bs-target="#navbarResponsive" className="nav-link px-lg-3 py-3 py-lg-4" to="/">INICIAR SECION</Link> </li>
                         </ul>
                     </div>
                 </div>
