@@ -42,7 +42,7 @@ const About = (): JSX.Element => {
                         <div className="carousel-item active">
                             <PostImage image_path={multipleCapsulBG} className="d-block w-100" />
                             <div className="carousel-caption d-md-block">
-                                <button style={saberMasStyle} type="button" className="btn btn-secondary btn-sm">SABER MAS</button>
+                                {/* <button style={saberMasStyle} type="button" className="btn btn-secondary btn-sm">SABER MAS</button> */}
                             </div>
                         </div>
                     </div>
